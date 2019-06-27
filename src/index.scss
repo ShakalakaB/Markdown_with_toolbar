@@ -1,0 +1,38 @@
+body{
+    margin:0;
+}
+#editorWrap{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    #toolbar{
+        height:40px;
+        padding-left:10px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border:2px solid black;
+        i{
+            margin-right:10px; 
+        }  
+        i:hover{
+            cursor:pointer;
+        }
+    }      
+    textarea{
+        flex-grow: 1;
+        font-size:1.2em;
+    }
+}
+
+#preview{
+    position: absolute;
+    right:0px;
+    top:0px;
+    height:100vh;
+    overflow: auto;
+}
+
